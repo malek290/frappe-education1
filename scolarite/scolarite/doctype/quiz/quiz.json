@@ -1,0 +1,87 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "field:titre_du_quiz",
+ "creation": "2024-04-19 10:47:14.994485",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "titre_du_quiz",
+  "description",
+  "chapitre_associe",
+  "questions",
+  "tab_2_tab",
+  "route",
+  "published"
+ ],
+ "fields": [
+  {
+   "fieldname": "titre_du_quiz",
+   "fieldtype": "Data",
+   "label": "Titre du quiz",
+   "unique": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "chapitre_associe",
+   "fieldtype": "Table MultiSelect",
+   "label": "Chapitre associe",
+   "options": "Chapitre_reference"
+  },
+  {
+   "fieldname": "questions",
+   "fieldtype": "Table",
+   "label": "Questions",
+   "options": "Question"
+  },
+  {
+   "fieldname": "tab_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tab 2"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "links": [],
+ "modified": "2024-04-19 16:01:59.439329",
+ "modified_by": "Administrator",
+ "module": "scolarite",
+ "name": "Quiz",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "quiz",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

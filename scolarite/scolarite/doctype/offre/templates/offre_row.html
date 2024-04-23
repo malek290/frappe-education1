@@ -1,0 +1,26 @@
+<div class="py-8 row">
+    <div class="col-sm-1">
+        <img alt="{{ doc.nom }}" src="{{ doc.image }}"/>
+    </div>
+    <div class="col">
+		<img>{{doc.image}}
+        <a class="font-size-lg" href="{{ doc.route }}">{{ doc.nom }}</a>
+        <p class="text-muted">{{ doc.description }}</p>
+        <div>
+            {%- if doc.status == 'Active' -%}
+            <span class="badge badge-success">Active</span>
+            {%- elif doc.status == 'Desactive' -%}
+            <span class="badge badge-danger">Desactive</span>
+            {%- elif doc.status == 'En attent' -%}
+            <span class="badge badge-warning">En attent</span>
+            {%- endif -%}
+        </div>
+        <div>
+            <strong>Type d'abonnement:</strong> {{ doc.typeabo }}
+        </div>
+        <div>
+            <strong>Niveau scolaire:</strong> {{ doc.niveau_scolaire }}
+        </div>
+        <a href="{{ doc.route }}" class="btn btn-primary">Acheter</a>
+    </div>
+</div>

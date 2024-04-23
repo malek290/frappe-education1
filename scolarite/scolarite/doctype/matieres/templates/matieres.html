@@ -1,0 +1,94 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+
+    <header>
+      <div class="container">
+        <h1>Tableau de bord</h1>
+        <div class="user-info">
+          <p>Bonjour Islem</p>
+          <a href="#">Mon profil</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="offers">
+        <div class="container">
+          <h2>Offres</h2>
+          <div class="offer-card">
+            <div class="offer-header">
+              <h3>Pun d'offres</h3>
+              <button class="btn-see-more">Voir plus</button>
+            </div>
+            <div class="offer-content">
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor, at molestie ligula hendrerit. Sed porttitor lectus eget est convallis, a lobortis metus ullamcorper. Nullam euismod diam vitae augue semper, sit amet gravida magna tincidunt.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="subjects">
+        <div class="container">
+          <h2>Matières</h2>
+          <div class="subjects-list">
+            <div class="subject">
+              <p>Maths</p>
+              <span class="progress" style="width: 0%"></span>
+            </div>
+            <div class="subject">
+              <p>Physique</p>
+              <span class="progress" style="width: 0%"></span>
+            </div>
+            <div class="subject">
+              <p>Chimie</p>
+              <span class="progress" style="width: 0%"></span>
+            </div>
+            <div class="subject">
+              <p>SVT</p>
+              <span class="progress" style="width: 0%"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="live">
+        <div class="container">
+          <h2>En direct</h2>
+          <div class="live-card">
+            <div class="live-header">
+              <h3>Porte monnaie Pto</h3>
+              <a href="#">Voir plus</a>
+            </div>
+            <div class="live-content">
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor, at molestie ligula hendrerit. Sed porttitor lectus eget est convallis, a lobortis metus ullamcorper. Nullam euismod diam vitae augue semper, sit amet gravida magna tincidunt.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="support">
+        <div class="container">
+          <h2>Assistance</h2>
+          <div class="support-list">
+            <div class="support-item">
+              <p>Technique</p>
+              <span class="progress" style="width: 0%"></span>
+            </div>
+            <div class="support-item">
+              <p>Anglais</p>
+              <span class="progress" style="width: 0%"></span>
+            </div>
+            <div class="support-item">
+              <p>Français</p>
+              <span class="progress" style="width: 0%"></span>
+            </div>
+            <div class="support-item">
+              <p>حربية</p>
+              <span class="progress" style="width: 0%"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+{% endblock %}
+
+<!-- this is a sample default web page template -->

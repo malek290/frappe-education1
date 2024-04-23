@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-03-30 04:35:29.060470",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "abonnement",
+  "prix",
+  "option"
+ ],
+ "fields": [
+  {
+   "fieldname": "prix",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Prix",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "option",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Option",
+   "options": "par jour\npar semaine\npar mois\ntput l'ann\u00e9e",
+   "reqd": 1
+  },
+  {
+   "fieldname": "abonnement",
+   "fieldtype": "Section Break",
+   "label": "type d'abonnement"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-17 10:29:02.718576",
+ "modified_by": "Administrator",
+ "module": "scolarite",
+ "name": "Abonnement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

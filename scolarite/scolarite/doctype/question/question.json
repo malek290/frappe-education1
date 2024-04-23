@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:question",
+ "creation": "2024-04-19 10:50:28.307591",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "question",
+  "options_reponce",
+  "reponce_correcte"
+ ],
+ "fields": [
+  {
+   "fieldname": "question",
+   "fieldtype": "Data",
+   "label": "Question",
+   "unique": 1
+  },
+  {
+   "fieldname": "options_reponce",
+   "fieldtype": "Table",
+   "label": "Options reponce",
+   "options": "Reponce"
+  },
+  {
+   "fieldname": "reponce_correcte",
+   "fieldtype": "Data",
+   "label": "Reponce correcte"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-19 11:05:09.780027",
+ "modified_by": "Administrator",
+ "module": "scolarite",
+ "name": "Question",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

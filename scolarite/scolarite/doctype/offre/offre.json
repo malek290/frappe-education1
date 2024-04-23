@@ -1,0 +1,161 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "field:nom",
+ "creation": "2024-03-26 16:42:41.260689",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "nom",
+  "image",
+  "typeabo",
+  "niveau_scolaire",
+  "description",
+  "acheter",
+  "section_break_nnpl",
+  "nombre_max",
+  "nb_inscrie",
+  "enseignant_assign\u00e9",
+  "matieres",
+  "column_break_fnay",
+  "status",
+  "date_debut",
+  "date_fin",
+  "tab_2_tab",
+  "route",
+  "published"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "image"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description",
+   "options": "detaille"
+  },
+  {
+   "fieldname": "typeabo",
+   "fieldtype": "Table",
+   "label": "Type d'abonnement",
+   "options": "Abonnement"
+  },
+  {
+   "fieldname": "tab_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tab 2"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  },
+  {
+   "fieldname": "enseignant_assign\u00e9",
+   "fieldtype": "Table MultiSelect",
+   "label": "Enseignant assign\u00e9",
+   "options": "Asseigne"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nDesactive\nEn attent"
+  },
+  {
+   "fieldname": "niveau_scolaire",
+   "fieldtype": "Select",
+   "label": "Niveau scolaire",
+   "options": "3eme primaire\n4eme primaire\n5eme primaire\n6eme primaire\n7eme de base\n8eme de base\n9eme de base\n1ere scondaire\n2eme info\n2eme eco\n2eme lettre\n2eme science exp\n3eme info\n3eme eco\n3eme lettre\n3eme technique\n3eme math\n3eme science exp\nbac info\nbac eco\nbac lettre\nbac technique\nbac math\nbac science exp"
+  },
+  {
+   "fieldname": "matieres",
+   "fieldtype": "Table MultiSelect",
+   "label": "Matieres",
+   "options": "Aseigne_to_Matieres"
+  },
+  {
+   "fieldname": "nombre_max",
+   "fieldtype": "Int",
+   "label": "Nombre max",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "nb_inscrie",
+   "fieldtype": "Int",
+   "label": "NB inscrie",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "date_debut",
+   "fieldtype": "Date",
+   "label": "Date debut"
+  },
+  {
+   "fieldname": "date_fin",
+   "fieldtype": "Date",
+   "label": "Date Fin"
+  },
+  {
+   "fieldname": "acheter",
+   "fieldtype": "Button",
+   "label": "Acheter"
+  },
+  {
+   "fieldname": "section_break_nnpl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_fnay",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nom",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nom",
+   "reqd": 1,
+   "unique": 1
+  }
+ ],
+ "has_web_view": 1,
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "links": [],
+ "modified": "2024-04-17 15:05:34.751010",
+ "modified_by": "Administrator",
+ "module": "scolarite",
+ "name": "Offre",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "Offres",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

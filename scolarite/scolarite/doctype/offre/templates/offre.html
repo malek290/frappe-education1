@@ -1,0 +1,41 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+
+<div class="py-20 row">
+    <div class="col">
+        <h1>{{ doc.nom }}</h1>
+        <p>{{ doc.description }}</p>
+        <div>
+            {%- if doc.status == 'Active' -%}
+            <span class="badge badge-success">Active</span>
+            {%- elif doc.status == 'Desactive' -%}
+            <span class="badge badge-danger">Desactive</span>
+            {%- elif doc.status == 'En attent' -%}
+            <span class="badge badge-warning">En attent</span>
+            {%- endif -%}
+        </div>
+        <div>
+            <strong>Type d'abonnement:</strong> {{ doc.typeabo }}
+        </div>
+        <div>
+            <strong>Niveau scolaire:</strong> {{ doc.niveau_scolaire }}
+        </div>
+        <div>
+            <strong>Nombre maximum:</strong> {{ doc.nombre_max }}
+        </div>
+        <div>
+            <strong>Nombre inscrits:</strong> {{ doc.nb_inscrie }}
+        </div>
+        <div>
+            <strong>Date de début:</strong> {{ doc.date_debut }}
+        </div>
+        <div>
+            <strong>Date de fin:</strong> {{ doc.date_fin }}
+        </div>
+        <a href="{{ doc.route }}" class="btn btn-primary">Acheter</a>
+    </div>
+</div>
+
+{% endblock %}
+    

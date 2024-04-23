@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "field:name1",
+ "creation": "2024-04-23 06:38:52.359302",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "liste_chapitre",
+  "image",
+  "column_break_dlnj",
+  "niveau_scolaire",
+  "progression",
+  "quiz",
+  "section_break_nhdh",
+  "description",
+  "tab_2_tab",
+  "route",
+  "published"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "niveau_scolaire",
+   "fieldtype": "Select",
+   "label": "Niveau scolaire"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "image"
+  },
+  {
+   "fieldname": "liste_chapitre",
+   "fieldtype": "Table MultiSelect",
+   "label": "Liste chapitre",
+   "options": "Chapitre_detaille"
+  },
+  {
+   "fieldname": "progression",
+   "fieldtype": "Float",
+   "label": "Progression"
+  },
+  {
+   "fieldname": "quiz",
+   "fieldtype": "Link",
+   "label": "Quiz",
+   "options": "Quiz"
+  },
+  {
+   "fieldname": "column_break_dlnj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_nhdh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tab_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tab 2"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  }
+ ],
+ "has_web_view": 1,
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "links": [],
+ "modified": "2024-04-23 11:25:17.007787",
+ "modified_by": "Administrator",
+ "module": "scolarite",
+ "name": "Matieres",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "matieres",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
